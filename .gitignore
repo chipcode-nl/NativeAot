@@ -1,0 +1,6 @@
+# These macOS files change frequently and are not needed
+**/.DS_Store
+
+# We put all build files here 
+**/tmp
+**/*.tmp

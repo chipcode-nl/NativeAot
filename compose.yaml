@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  container:
+    build: 
+      context: .
+      args:
+        UID: ${HOST_UID}
+        GID: ${HOST_GID}
+    ports:
+      - 127.0.0.1:8080:8080
+      - 127.0.0.1:80:80
+    working_dir: /project
+    volumes:
+      - ./:/project
+      - ./tmp/home:/home/developer 
+    command:
+      - /bin/bash
+      

@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "NativeAot",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build NativeAot",
+      "program": "${workspaceFolder}/tmp/bin/net8.0/NativeAot.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://0.0.0.0:80"
+      },
+      "console": "integratedTerminal",
+      "logging": {
+        "browserStdOut": false,
+        "elapsedTiming": false,
+        "exceptions": true,
+        "moduleLoad": false,
+        "processExit": false,
+        "programOutput": false,
+        "threadExit": false
+      }
+    }
+  ]
+}
