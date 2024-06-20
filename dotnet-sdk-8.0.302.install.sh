@@ -4,22 +4,22 @@
 # https://dotnet.microsoft.com/en-us/download/dotnet/8.0
 # Author   : Carl van Heezik
 # Revision : 1.0
-# Date     : 2023-11-14
+# Date     : 2024-06-20
 # Run script in current shell
-# . ./dotnet-sdk-8.0.100.install.sh
+# . ./dotnet-sdk-8.0.302.install.sh
 
-DOTNET_VERSION='8.0.100'
+DOTNET_VERSION='8.0.302'
 DOTNET_PATH=/usr/local/share/dotnet
 DOTNET_SDK_PATH=$DOTNET_PATH/sdk/
 
-MACOS_X86_64_URL=https://download.visualstudio.microsoft.com/download/pr/e59acfc2-5987-43f9-bd03-0cbe446679e1/7db7313c1c99104279a69ccd47d160a1/
+MACOS_X86_64_URL=https://download.visualstudio.microsoft.com/download/pr/8893b99f-aca2-4f93-af7b-cf6017cf5f7b/e45804f1d91b9b01ebd5b15a29e9c088/
 MACOS_X86_64_PKG=dotnet-sdk-$DOTNET_VERSION-osx-x64.tar.gz
-MACOS_ARM64_URL=https://download.visualstudio.microsoft.com/download/pr/2a79b5ad-82a7-4615-a73b-91bf24028471/0e6a5c6d7f8b792a421e3796a93ef0a1/
+MACOS_ARM64_URL=https://download.visualstudio.microsoft.com/download/pr/9d5ec61f-58b3-412f-a4b7-be8c295b4877/fcd77a3d07f2c2054b86154634402527/
 MACOS_ARM64_PKG=dotnet-sdk-$DOTNET_VERSION-osx-arm64.tar.gz
 
-LINUX_X86_64_URL=https://download.visualstudio.microsoft.com/download/pr/5226a5fa-8c0b-474f-b79a-8984ad7c5beb/3113ccbf789c9fd29972835f0f334b7a/
+LINUX_X86_64_URL=https://download.visualstudio.microsoft.com/download/pr/dd6ee0c0-6287-4fca-85d0-1023fc52444b/874148c23613c594fc8f711fc0330298/
 LINUX_X86_64_PKG=dotnet-sdk-$DOTNET_VERSION-linux-x64.tar.gz
-LINUX_ARM64_URL=https://download.visualstudio.microsoft.com/download/pr/43e09d57-d0f5-4c92-a75a-b16cfd1983a4/cba02bd4f7c92fb59e22a25573d5a550/
+LINUX_ARM64_URL=https://download.visualstudio.microsoft.com/download/pr/ccc923ed-10de-4131-9c65-2a73f51185cb/3c04869af60dc562d81a673b2fb95515/
 LINUX_ARM64_PKG=dotnet-sdk-$DOTNET_VERSION-linux-arm64.tar.gz
 
 install_homebrew()

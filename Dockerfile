@@ -4,7 +4,7 @@
 # Author      : Carl van Heezik
 # Revision    : 1.0
 # Date         : 2023-10-13
-FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0 AS build 
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build 
 ARG UID
 ARG GID
 

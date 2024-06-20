@@ -9,10 +9,10 @@ app.MapGet("/", () => "Hello World!");
 
 await app.StartAsync();
 stopwatch.Stop();
-Console.WriteLine($"started {stopwatch}");
+Console.WriteLine($"Started {stopwatch}");
 
 double workingSet = Process.GetCurrentProcess().WorkingSet64;
 Console.WriteLine($"Working Set: {workingSet / (1024 * 1024):N2}MB");
 
 await app.WaitForShutdownAsync();
-Console.WriteLine("stopped");
+Console.WriteLine("Stopped");
