@@ -8,8 +8,8 @@ FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:9.0-preview AS build
 ARG UID
 ARG GID
 
-RUN apt update -y
-RUN apt upgrade -y
+RUN apt-get update -y
+RUN apt-get upgrade -y
 RUN apt-get -y install sudo
 RUN apt-get -y install clang zlib1g-dev
 RUN adduser --uid $UID --gid $GID developer
